@@ -10,6 +10,10 @@ app.get('/', (request, res) => {
   res.send('hello from server!')
 })
 
+app.get('/api/helloworld', (req, res) => {
+  res.json({sayHi: 'hello from server, nice to meet you!'})
+})
+
 app.listen(constants.PORT, () => {
   console.log('App start on port', constants.PORT)
 })
