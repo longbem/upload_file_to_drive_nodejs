@@ -9,14 +9,14 @@ import { AboutPages } from './pages/about';
 
 const Navbar = ({ username }) => (
   <div className="box-navbar">
-    <div>
-      <p>Logo</p>
+    <div className="logo">
+      <NavLink to='/'>Logo</NavLink>
     </div>
     <div className="box-navbar-right">
       <ul className="ul_top_hypers">
-        <li>
+        {/* <li>
           <NavLink to='/'>Home</NavLink>
-        </li>
+        </li> */}
         <li>
           <NavLink to='/maps'>Maps</NavLink>
         </li>
@@ -41,6 +41,7 @@ function App() {
   const fetchData = async () => {
     try {
       const result = await API_URL.get('/hello-world');
+      console.log('result', result);
       if (result.status === 200) {
         setHello(result.data.sayHi);
       }

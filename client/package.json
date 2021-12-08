@@ -39,6 +39,6 @@
     ]
   },
   "devDependencies": {
-    "babel-loader": "^8.2.2"
+    "babel-loader": "8.1.0"
   }
 }
