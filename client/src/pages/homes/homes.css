@@ -1,18 +1,24 @@
+.container-home {
+  min-height: 100vh;
+}
+
 .container-welcome {
   display: block;
   margin-left: auto;
   margin-right: auto;
   width: 90%;
+  margin-top: 2%;
 }
 
 .box-welcome {
   width: 90%;
   height: 80%;
-  padding-top: 40px;
+  /* padding-top: 5%; */
   position: absolute;
   background: url('https://st.quantrimang.com/photos/image/2017/11/07/anh-dep-viet-nam-25.jpg') top center / cover no-repeat;
   /* top: 50; */
   border-radius: 5px;
+  text-align: center;
 }
 
 .welcome {
@@ -20,8 +26,10 @@
   font-size: 30px;
   color: #ffffff;
   text-transform: uppercase;
+  font-weight: bold;
 }
 
 .name {
   text-align: center;
+  font-weight: bold;
 }

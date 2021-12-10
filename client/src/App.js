@@ -7,29 +7,40 @@ import { MapsPages } from './pages/maps';
 import { UploadFilesPages } from './pages/uploadFile';
 import { AboutPages } from './pages/about';
 
-const Navbar = ({ username }) => (
-  <div className="box-navbar">
-    <div className="logo">
-      <NavLink to='/'>Logo</NavLink>
+const Navbar = ({ username }) => {
+ 
+  return (
+    <div className="box-navbar">
+      <div className="logo">
+        <NavLink className="underline" to='/'>Logo</NavLink>
+      </div>
+      <div className="box-navbar-right">
+        <ul className="ul_top_hypers">
+          {/* <li>
+            <NavLink to='/'>Home</NavLink>
+          </li> */}
+          <li>
+            <NavLink className="underline menu-top" to='/maps'>Maps</NavLink>
+          </li>
+          <li>
+            <NavLink className="underline menu-top" to={`/uploads`}>Upload</NavLink>
+          </li>
+          <li>
+            <NavLink className="underline menu-top" to={`/about`}>About</NavLink>
+          </li>
+        </ul>
+      </div>
     </div>
-    <div className="box-navbar-right">
-      <ul className="ul_top_hypers">
-        {/* <li>
-          <NavLink to='/'>Home</NavLink>
-        </li> */}
-        <li>
-          <NavLink to='/maps'>Maps</NavLink>
-        </li>
-        <li>
-          <NavLink to={`/uploads`}>Upload</NavLink>
-        </li>
-        <li>
-          <NavLink to={`/about`}>About</NavLink>
-        </li>
-      </ul>
+  )
+}
+
+const Footer = () => {
+  return (
+    <div className="col-12 box-copyright">
+      <p className="copyright">© Copyright | Thuộc sở hưu của nhóm Lạc Thủy B Confessions</p>
     </div>
-  </div>
-)
+  );
+}
 
 function App() {
   const [hello, setHello] = useState('');
@@ -52,14 +63,17 @@ function App() {
 
   return (
     <Router>
-      <div className="container">
-        <Navbar username={hello}/>
-        <Switch>
-            <Route exact path='/' component={HomesPages} />
-            <Route path='/maps' component={MapsPages} />
-            <Route path='/uploads' component={UploadFilesPages} />
-            <Route path='/about' component={AboutPages} />
-        </Switch>
+      <div className="box-container">
+        <div className="container">
+          <Navbar username={hello}/>
+          <Switch>
+              <Route exact path='/' component={HomesPages} />
+              <Route path='/maps' component={MapsPages} />
+              <Route path='/uploads' component={UploadFilesPages} />
+              <Route path='/about' component={AboutPages} />
+          </Switch>
+        </div>
+        <Footer />
       </div>
     </Router>
   );
