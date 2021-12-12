@@ -1,6 +1,6 @@
 import React from 'react';
 import './about.css';
-import { ImageAbout } from './imageLTB.tsx';
+import { ImageAbout } from './imageLTB';
 
 const Info = ({ label, value }) => {
   return (
