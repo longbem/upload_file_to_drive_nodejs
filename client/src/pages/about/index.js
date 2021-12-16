@@ -1,14 +1,7 @@
 import React from 'react';
 import './about.css';
 import { ImageAbout } from './imageLTB';
-
-const Info = ({ label, value }) => {
-  return (
-    <div className="info-about">
-      <p><span className="label">{label}</span>:  {value}</p>
-    </div>
-  )
-}
+import { Info } from './info';
 
 function AboutPages() {
   return (
@@ -18,7 +11,7 @@ function AboutPages() {
         <h4>Lạc Thủy B Confessions</h4>
         <Info label="Địa chỉ" value="X.Phú Nghĩa - H.Lạc Thuỷ - T.Hoà Bình"/>
         <Info label="Điện thoại" value="0123456789"/>
-        <Info label="Facebook" value={<a href="https://www.facebook.com/lacthuybconfessions">Lạc Thủy B Confessions</a>}/>
+        <Info label="Facebook" value={<a href="https://www.facebook.com/lacthuybconfessions" style={{color: 'blue'}}>Lạc Thủy B Confessions</a>}/>
       </div>
       <div className="col-6">
         <ImageAbout />
