@@ -21,9 +21,9 @@ const Navbar = ({ username }) => {
           <li>
             <NavLink className="underline menu-top" to='/timetable'>Time Table</NavLink>
           </li>
-          <li>
+          {/* <li>
             <NavLink className="underline menu-top" to='/maps'>Maps</NavLink>
-          </li>
+          </li> */}
           <li>
             <NavLink className="underline menu-top" to={`/uploads`}>Upload</NavLink>
           </li>
@@ -71,7 +71,7 @@ function App() {
           <Switch>
               <Route exact path='/' component={HomesPages} />
               <Route exact path='/timetable' component={TimeTablePages} />
-              <Route path='/maps' component={MapsPages} />
+              {/* <Route path='/maps' component={MapsPages} /> */}
               <Route path='/uploads' component={UploadFilesPages} />
               <Route path='/about' component={AboutPages} />
           </Switch>
