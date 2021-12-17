@@ -15,7 +15,7 @@ function AboutPages() {
         <h4>Lạc Thủy B Confessions</h4>
         <Info label="Địa chỉ" value="X.Phú Nghĩa - H.Lạc Thuỷ - T.Hoà Bình"/>
         <Info label="Điện thoại" value="0123456789"/>
-        <Info label="Facebook" value={<a href="https://www.facebook.com/lacthuybconfessions" style={{color: 'blue'}}>Lạc Thủy B Confessions</a>}/>
+        <Info label="Facebook" value={<a href="https://www.facebook.com/lacthuybconfessions" target="_blank" style={{color: 'blue'}} rel="noreferrer">Lạc Thủy B Confessions</a>}/>
       </div>
       <div className="col-6">
         <ImageAbout />
