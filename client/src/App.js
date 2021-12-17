@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from 'react';
 import './App.css';
+import 'antd/dist/antd.css';
 import { API_URL } from './api/index.js';
 import { BrowserRouter as Router, Route, NavLink, Switch } from 'react-router-dom';
 import { HomesPages } from './pages/homes';

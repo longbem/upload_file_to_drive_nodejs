@@ -19,19 +19,24 @@
   display: flex;
   justify-content: space-between;
   padding: 0 10%;
+  height: 60px;
   background-color: #333;
 }
 
 .ul_top_hypers {
   display: flex;
   list-style-type: none;
+  margin-bottom: 0px;
 }
 
 .ul_top_hypers li {
   margin: 0 15px;
+  /* padding-top: 6px; */
 }
 
 .box-navbar-right {
+  display: flex;
+  align-items: center;
   right: 0;
 }
 
@@ -41,16 +46,18 @@
 
 .box-copyright {
   background-color: #333;
-  height: 50px;
+  height: 60px;
   line-height: 30px;
   text-align: center;
 }
 
 .copyright {
   font-size: 12px;
-  display: inline-block;
-  vertical-align: middle;
+  /* display: inline-block; */
+  /* vertical-align: middle; */
   color: rgb(184, 184, 184);
+  margin-bottom: 0px;
+  padding-top: 15px;
 }
 
 /* For desktop: */
