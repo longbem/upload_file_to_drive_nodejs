@@ -47,7 +47,7 @@
 .box-copyright {
   background-color: #333;
   height: 60px;
-  line-height: 30px;
+  /* line-height: 30px; */
   text-align: center;
 }
 
@@ -57,7 +57,7 @@
   /* vertical-align: middle; */
   color: rgb(184, 184, 184);
   margin-bottom: 0px;
-  padding-top: 15px;
+  padding-top: 20px;
 }
 
 /* For desktop: */
