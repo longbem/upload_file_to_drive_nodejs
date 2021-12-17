@@ -6,6 +6,7 @@ import { HomesPages } from './pages/homes';
 import { MapsPages } from './pages/maps';
 import { UploadFilesPages } from './pages/uploadFile';
 import { AboutPages } from './pages/about';
+import { TimeTablePages } from './pages/timeTable';
 
 const Navbar = ({ username }) => {
  
@@ -16,9 +17,9 @@ const Navbar = ({ username }) => {
       </div>
       <div className="box-navbar-right">
         <ul className="ul_top_hypers">
-          {/* <li>
-            <NavLink to='/'>Home</NavLink>
-          </li> */}
+          <li>
+            <NavLink className="underline menu-top" to='/timetable'>Time Table</NavLink>
+          </li>
           <li>
             <NavLink className="underline menu-top" to='/maps'>Maps</NavLink>
           </li>
@@ -68,6 +69,7 @@ function App() {
           <Navbar username={hello}/>
           <Switch>
               <Route exact path='/' component={HomesPages} />
+              <Route exact path='/timetable' component={TimeTablePages} />
               <Route path='/maps' component={MapsPages} />
               <Route path='/uploads' component={UploadFilesPages} />
               <Route path='/about' component={AboutPages} />
