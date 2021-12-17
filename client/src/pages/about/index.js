@@ -1,9 +1,13 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import './about.css';
 import { ImageAbout } from './imageLTB';
 import { Info } from './info';
 
 function AboutPages() {
+  useEffect(() => {
+    document.title = "Thông tin";
+  }, []);
+
   return (
     <div className="container-about">
       <div className="col-6">

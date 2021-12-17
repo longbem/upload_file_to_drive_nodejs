@@ -1,8 +1,12 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import './homes.css';
 
 
 function HomesPages() {
+  useEffect(() => {
+    document.title = "Lạc Thuỷ B Confessions";
+  }, []);
+
   return (
     <div className="container-home">
       <div className="container-welcome">
