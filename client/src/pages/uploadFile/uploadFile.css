@@ -1,5 +1,5 @@
 .up-file-container {
-  background-color: #282c34;
+  /* background-color: #282c34; */
   /* min-height: 100vh; */
   display: flex;
   flex-direction: column;
@@ -9,10 +9,10 @@
   color: white;
 }
 .background-upload {
-  background-color: #fff;
+  background-color: #f6f6f6;
   padding: 10px 20px;
   border-radius: 7px;
-  margin: 5px 0px;
+  margin: 7px 0px;
 }
 
 .txt-introduce {
@@ -25,7 +25,11 @@
   margin: 20px 0;
 }
 
+.input-upload {
+  border-radius: 7px;
+}
 .box-upload {
   /* height: 150px; */
   /* justify-content: center; */
+  overflow-x: hidden;
 }

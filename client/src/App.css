@@ -104,6 +104,10 @@
   align-items: center;
 }
 
+.shadow {
+  box-shadow: 1px 1px 3px grey;
+}
+
 @media only screen and (max-width: 568px) {
   /* For mobile phones: */
   [class*='col-'] {

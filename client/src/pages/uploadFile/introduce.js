@@ -3,7 +3,7 @@ import './uploadFile.css';
 
 function Introduce() {
   return (
-        <div className="col-6 background-upload">
+        <div className="col-6 background-upload shadow">
           <h3>Lạc Thủy B Confessions</h3>
           <p className="txt-introduce">
           Hi! 

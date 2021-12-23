@@ -16,19 +16,19 @@ function UploadFilesPages() {
   return (
     <div className="up-file-container">
         <div className="col-6">
-          <img src={imageSchool} width='100%' className="img-school-up-file"/>
+          <img src={imageSchool} width='100%' className="img-school-up-file shadow"/>
         </div>
         <Introduce />
-        <div className="col-6 background-upload center">
+        <div className="col-6 background-upload center shadow">
           <img src={banner} width="400" />
         </div>
-        <div className="col-6 background-upload">
+        <div className="col-6 background-upload shadow">
           <h6>Nội dung:</h6>
           <p className="txt-introduce">Hãy viết những điều thầm kín của bạn vào ô bên dưới nhé.<br /> Thông điệp này sẽ được xuất hiện trong Fanpage: <a href='https://www.facebook.com/lacthuybconfessions' target="_blank" style={{color: 'blue'}} rel="noreferrer">Lạc thuỷ B Confessions</a> </p>
         </div>
-        <div className="col-6 background-upload">
+        <div className="col-6 background-upload shadow">
           <h6>Nào! Hãy thả Cf tại đây bạn nhé. <span style={{color: 'red'}}>*</span></h6>
-          <Input.TextArea rows={10}/>
+          <Input.TextArea rows={10} className="input-upload"/>
         </div>
         <UploadFiles />
         <Button />
