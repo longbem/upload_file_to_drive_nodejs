@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import './uploadFile.css';
-import { Upload, List } from 'antd';
+import { Upload } from 'antd';
 
 function UploadFiles() {
   const [fileList, setFileList] = useState([
