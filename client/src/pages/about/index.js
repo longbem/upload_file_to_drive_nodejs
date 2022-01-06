@@ -12,7 +12,7 @@ function AboutPages() {
     <div className="container-about">
       <div className="col-6">
         <h1>Thông Tin</h1>
-        <h2>Lạc Thủy B Confessions</h2>
+        <h3>Lạc Thủy B Confessions</h3>
         <Info label="Địa chỉ" value="X.Phú Nghĩa - H.Lạc Thuỷ - T.Hoà Bình"/>
         {/* <Info label="Điện thoại" value="0123456789"/> */}
         <Info label="Facebook" value={<a href="https://www.facebook.com/lacthuybconfessions" target="_blank" style={{color: 'blue'}} rel="noreferrer">Lạc Thủy B Confessions</a>}/>

@@ -19,9 +19,9 @@ const Navbar = ({ username }) => {
       </div>
       <div className="box-navbar-right">
         <ul className="ul_top_hypers">
-          <li>
+          {/* <li>
             <NavLink className="underline menu-top" to='/timetable'>Time Table</NavLink>
-          </li>
+          </li> */}
           {/* <li>
             <NavLink className="underline menu-top" to='/maps'>Maps</NavLink>
           </li> */}
@@ -74,7 +74,7 @@ function App() {
           <Navbar username={hello}/>
           <Switch>
               <Route exact path='/' component={HomesPages} />
-              <Route exact path='/timetable' component={TimeTablePages} />
+              {/* <Route exact path='/timetable' component={TimeTablePages} /> */}
               {/* <Route path='/maps' component={MapsPages} /> */}
               <Route path='/uploads' component={UploadFilesPages} />
               <Route path='/registerAdmin' component={RegisterAdmin} />

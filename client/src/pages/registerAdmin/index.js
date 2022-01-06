@@ -60,8 +60,21 @@ export const RegisterAdmin = () => {
     }
 
     const disableBtnSend = useMemo(() => {
-
-    }, []);
+        let disable = true;
+        const { name,
+            numberPhone,
+            linkFb,
+            idea,
+            position,
+            location,
+            classCurrent,
+        } = info
+        const _isDisable = name && numberPhone && linkFb && idea && position && location && classCurrent
+        if (_isDisable) {
+            disable = false 
+        }
+        return disable;
+    }, [info]);
 
     return (
         <div className="container-register-admin">
