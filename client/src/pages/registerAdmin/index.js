@@ -1,13 +1,16 @@
-import React, { useState, useRef } from 'react';
-import { Form, Input, Button, Radio, Select } from 'antd';
+import React, { useState, useRef, useMemo } from 'react';
+import { Form, Input, Button, Radio, Select, message } from 'antd';
 import { location, classCurrent, position } from './contants';
+import { SubmitRegisterAdmin } from './services';
 
 import './registerAdmin.css';
 
+const imageSchool = 'https://scontent.xx.fbcdn.net/v/t1.6435-9/36726426_2051735801757938_8410435010913370112_n.jpg?_nc_cat=106&ccb=1-5&_nc_sid=e3f864&_nc_ohc=WHRcAVAPvksAX_WixWi&tn=NqfCNzQysmY-vE_F&_nc_ht=scontent.fhan3-4.fna&oh=4bf1e5bbc5c7550fb92b73956e5b7488&oe=61D750FB&_nc_fr=fhan3c04';
 
 export const RegisterAdmin = () => {
     const formRef = useRef(null);
     const [info, setInfo] = useState({
+        id: '',
         name: '',
         numberPhone: '',
         linkFb: '',
@@ -22,8 +25,22 @@ export const RegisterAdmin = () => {
         setInfo({ ...info, [e.target.name]: e.target.value });
     }
 
-    const submitHandler = (e) => {
+    const submitHandler = async (e) => {
         e.preventDefault();
+        const data = {
+            ...info,
+            id: Math.round(Date.now()/100000),
+            isPhotoShop: info.isPhotoShop === 0 ? 'Không' : 'Có',
+            classCurrent: classCurrent[info.classCurrent - 1].label,
+            location: location[info.location - 1].label,
+            position: position[info.position - 1].label,
+        }
+        const res = await SubmitRegisterAdmin(data);
+        if (res.status) {
+            message.success(res?.message);
+        } else {
+            message.success(res?.message);
+        }
     }
     
     const handleSelectPhotoShop = (e) => {
@@ -42,10 +59,17 @@ export const RegisterAdmin = () => {
         setInfo({ ...info, location: e });
     }
 
+    const disableBtnSend = useMemo(() => {
+
+    }, []);
+
     return (
         <div className="container-register-admin">
+            <div className="col-6">
+                <img src={imageSchool} width='100%' className="img-school-up-file shadow"/>
+            </div>
             <div className="form-register col-6 background-upload">
-            <h2>React Google Sheets!</h2>
+            <h2>Đăng ký Admin Cfs</h2>
             <Form 
                 ref={formRef} 
                 labelCol={{ span: 7 }}
@@ -85,7 +109,9 @@ export const RegisterAdmin = () => {
                     </Radio.Group>
                 </Form.Item>
                 
-                <Button color="blue" onClick={submitHandler} type='submit'>Submit</Button>
+                <div className="box-btn-submit">
+                    <Button disabled={disableBtnSend} className="btnSubmit"color="blue" onClick={submitHandler} type='submit'><span>Gửi</span></Button>
+                </div>
             </Form>
             </div>
         </div>

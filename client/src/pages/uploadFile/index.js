@@ -20,7 +20,7 @@ function UploadFilesPages() {
         </div>
         <Introduce />
         <div className="col-6 background-upload center shadow">
-          <img src={banner} width="400" />
+          <img src={banner} className="banner" />
         </div>
         <div className="col-6 background-upload shadow">
           <h6>Nội dung:</h6>

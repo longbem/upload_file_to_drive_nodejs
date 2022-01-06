@@ -4,8 +4,8 @@ const imageUrl = 'https://scontent.xx.fbcdn.net/v/t1.6435-9/36726426_20517358017
 
 function ImageAbout() {
   return (
-    <div>
-     <img src={imageUrl} width="650" height="350" className="imageAbout" />
+    <div className="col-12">
+     <img src={imageUrl} width="100%" className="imageAbout" />
     </div>
   );
 }

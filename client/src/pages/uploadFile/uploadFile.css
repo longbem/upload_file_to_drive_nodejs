@@ -1,13 +1,10 @@
 .up-file-container {
-  /* background-color: #282c34; */
-  /* min-height: 100vh; */
   display: flex;
   flex-direction: column;
   align-items: center;
-  /* justify-content: center; */
   font-size: calc(10px + 2vmin);
-  color: white;
 }
+
 .background-upload {
   background-color: #f6f6f6;
   padding: 10px 20px;
@@ -32,4 +29,20 @@
   /* height: 150px; */
   /* justify-content: center; */
   overflow-x: hidden;
+}
+.banner {
+  width: 400px;
+}
+
+@media only screen and (max-width: 568px) {
+  /* For mobile phones: */
+  [class*='col-'] {
+    width: 100%;
+  }
+  .up-file-container {
+      margin: 20px 20px;
+  }
+  .banner {
+    width: 300px;
+  }
 }

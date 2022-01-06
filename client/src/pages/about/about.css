@@ -6,6 +6,7 @@
   content: '';
   clear: both;
   min-height: 80vh;
+  font-size: calc(10px + 2vmin);
 }
 
 .label {
@@ -14,6 +15,7 @@
 
 .imageAbout {
   border-radius: 10px;
+  height: 350px;
 }
 
 @media only screen and (max-width: 900px) {
@@ -23,5 +25,8 @@
   }
   .container-about {
     display: block;
+  }
+  .imageAbout {
+    height: 200px;
   }
 }
