@@ -7,6 +7,10 @@
   color: #ffffff;
 }
 
+.menu-top:hover {
+  font-size: 20px;
+}
+
 .active {
   color: #04b1f5;
 }
