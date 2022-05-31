@@ -34,6 +34,37 @@
   width: 400px;
 }
 
+.box-btn-submit-upload {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 30px 0px;
+  
+}
+
+.btn-submit-upload:hover {
+  border-color: #5c9ee0;
+  border-style: 1px;
+  border-radius: 7px;
+  color: #ffffff;
+  background-color: #69bbe0;
+}
+
+.btn-submit-upload { 
+  width: 200px;
+  height: 32px;
+  font-size: 14px;
+  text-align: center;
+  text-decoration: none;
+  align-items: center;
+  border: 2px solid #8fc7e7;
+  border-radius: 7px;
+  background-color: #8fc7e7 ;
+  color: rgb(80, 79, 79);
+  font-weight: 800;
+  /* display: inline-block; */
+}
+
 @media only screen and (max-width: 568px) {
   /* For mobile phones: */
   [class*='col-'] {

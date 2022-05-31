@@ -17,3 +17,17 @@ table, th, td {
     border: 1px solid black;
     color: #000;
 }
+
+.cell-note {
+    position: relative;
+}
+
+.cell-note:after {
+    content: "";
+    position: absolute;
+    display: block;
+    top: 0;
+    right: 0;
+    border-left: 7px solid transparent;
+    border-top: 7px solid red;
+}

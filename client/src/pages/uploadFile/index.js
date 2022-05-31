@@ -16,7 +16,7 @@ function UploadFilesPages() {
   return (
     <div className="up-file-container">
         <div className="col-6">
-          <img src={imageSchool} width='100%' className="img-school-up-file shadow"/>
+          <img src={imageSchool} width='100%' alt="ltb cfs" className="img-school-up-file shadow"/>
         </div>
         <Introduce />
         <div className="col-6 background-upload center shadow">
@@ -31,7 +31,9 @@ function UploadFilesPages() {
           <Input.TextArea rows={10} className="input-upload"/>
         </div>
         <UploadFiles />
-        <Button type='submit'>Gửi</Button>
+        <div className="col-6 box-btn-submit-upload">
+          <button type="submit" className="btn-submit-upload">DM xong thì Gửi đi</button>
+        </div>
     </div>
   );
 }

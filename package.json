@@ -19,11 +19,14 @@
     "prettier": "^2.3.2"
   },
   "dependencies": {
+    "@grapecity/wijmo.all": "^5.20213.824",
     "axios": "^0.21.1",
     "concurrently": "^6.2.0",
     "cors": "^2.8.5",
     "dotenv": "^10.0.0",
     "express": "^4.17.1",
-    "googleapis": "^39.2.0"
+    "googleapis": "^39.2.0",
+    "read-excel-file": "^5.2.25",
+    "xlsx": "^0.17.4"
   }
 }
